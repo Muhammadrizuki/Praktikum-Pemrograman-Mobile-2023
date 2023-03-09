@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">praktikum1t2</string>
+    <string-array name="choice">
+        <item>Bola</item>
+        <item>Balok</item>
+        <item>Kerucut</item>
+    </string-array>
+</resources>
