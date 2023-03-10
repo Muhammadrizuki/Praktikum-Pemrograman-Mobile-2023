@@ -1,4 +1,4 @@
-package com.example.assignment2;
+package com.example.bangunruang;
 
 import org.junit.Test;
 

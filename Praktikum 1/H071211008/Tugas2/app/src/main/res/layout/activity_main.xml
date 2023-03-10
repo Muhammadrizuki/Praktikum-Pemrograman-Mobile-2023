@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,45 +8,130 @@
     android:padding="20dp"
     tools:context=".MainActivity">
 
-    <FrameLayout
-        android:id="@+id/fl_frame"
-        android:layout_above="@id/ll_linear"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-
     <LinearLayout
-        android:layout_alignParentBottom="true"
-        android:id="@+id/ll_linear"
-        android:orientation="horizontal"
-        android:padding="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:id="@+id/ll_atas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-        <Button
-            android:onClick="fragmentPertama"
-            android:id="@+id/btn_bola"
+        <TextView
+            android:id="@+id/pilih"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Bola"/>
+            android:text="Pilih bangun ruang:"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            android:textColor="@color/coklat" />
 
-        <Button
-            android:onClick="fragmentKedua"
-            android:id="@+id/btn_kerucut"
+        <Spinner
+            android:id="@+id/spinner"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_weight="1"
-            android:text="Kerucut"/>
-
-        <Button
-            android:onClick="fragmentKetiga"
-            android:id="@+id/btn_balok"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Balok"/>
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
-</RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_jarijari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ll_atas"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_jari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="jari-jari"/>
+
+        <EditText
+            android:id="@+id/et_jari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_panjang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ll_jarijari"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_panjang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Panjang"/>
+
+        <EditText
+            android:id="@+id/et_panjang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_lebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/ll_panjang">
+
+        <TextView
+            android:id="@+id/tv_lebar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Lebar"/>
+
+        <EditText
+            android:id="@+id/et_lebar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tinggi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/ll_lebar">
+
+        <TextView
+            android:id="@+id/tv_tinggi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Tinggi"/>
+
+        <EditText
+            android:id="@+id/et_tinggi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_hitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hitung"
+        app:layout_constraintTop_toBottomOf="@id/ll_tinggi"/>
+
+    <TextView
+        android:id="@+id/tv_hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/coklat"
+        app:layout_constraintTop_toBottomOf="@id/btn_hitung"
+        app:layout_constraintStart_toStartOf="@id/btn_hitung"
+        app:layout_constraintEnd_toEndOf="@id/btn_hitung"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
