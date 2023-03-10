@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Luas</string>
+    <string-array name="Select">
+        <item>Bola</item>
+        <item>Kerucut</item>
+        <item>Balok</item>
+    </string-array>
+</resources>
