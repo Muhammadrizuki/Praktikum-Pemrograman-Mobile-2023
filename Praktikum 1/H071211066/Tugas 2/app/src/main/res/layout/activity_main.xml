@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#fe7ce0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffff"
+            android:textStyle="bold"
+            android:text="Pilih bangun ruang :"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text_jari_jari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Jari-jari"
+        android:textSize="17dp"/>
+    <EditText
+        android:id="@+id/jari_jari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:inputType="number"
+        />
+    <TextView
+        android:id="@+id/text_tinggi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Tinggi"
+        android:textSize="17dp"
+        android:visibility="gone"/>
+    <EditText
+        android:id="@+id/tinggi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:inputType="number"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/text_panjang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Panjang"
+        android:textSize="17dp"
+        android:visibility="gone"/>
+    <EditText
+        android:id="@+id/panjang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:inputType="number"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/hitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:text="HITUNG"/>
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Hasil"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@color/black"/>
+
+
+
+</LinearLayout>
