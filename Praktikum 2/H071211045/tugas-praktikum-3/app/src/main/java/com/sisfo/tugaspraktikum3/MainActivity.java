@@ -44,8 +44,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.backspaceBtn:
                 this.afterMath(processed, "×");
-                char last = current.charAt(current.length() - 1);
-                System.out.println(last);
                 onOperation = false;
 
                 if (current.length() > 1) {
@@ -63,14 +61,13 @@ public class MainActivity extends AppCompatActivity {
         String temp = current;
 
         if (button.getId() == R.id.calculateBtn) {
+            if (!current.matches(".*[−+×÷].*")) return;
             result.setVisibility(View.VISIBLE);
             String[] preCalc = current.split("(?<=[−+×÷])|(?=[−+×÷])");
 
             for (int i = 0; i < preCalc.length; i++) {
-                if (!preCalc[i].matches(".*[−+×÷].*")) {
+                if (!preCalc[i].matches(".*[−+×÷].*"))
                     preCalc[i] = preCalc[i].replaceAll("\\.", "");
-                }
-                System.out.println("Entry : " + preCalc[i]);
             }
 
             ArrayList<String> calc = new ArrayList<>(Arrays.asList(preCalc));
@@ -79,9 +76,7 @@ public class MainActivity extends AppCompatActivity {
                 if (x.equals("×") || x.equals("÷")) {
                     int index = calc.indexOf(x);
                     if (x.equals("×")) {
-                        System.out.println(total);
-                        System.out.println("X : "+x);
-                        total = new BigDecimal(calc.get(index - 1)).multiply(new BigDecimal(calc.get(index + 1))); // 5000, +, 25
+                        total = new BigDecimal(calc.get(index - 1)).multiply(new BigDecimal(calc.get(index + 1)));
 
                     } else {
                         if (calc.get(index + 1).equals("0")) {
@@ -89,10 +84,11 @@ public class MainActivity extends AppCompatActivity {
                             return;
                         }
                         total = new BigDecimal(calc.get(index - 1)).divide(new BigDecimal(calc.get(index + 1)), 2, RoundingMode.HALF_UP);
-                        System.out.println("Total : " + total);
+
                     } simulateTreeOn(calc, total, index);
                 }
-            } calc.removeAll(Arrays.asList("#", null));
+            }
+            calc.removeAll(Arrays.asList("#", null));
 
             for (String x : calc) {
                 if (x.equals("+") || x.equals("−")) {
@@ -102,9 +98,10 @@ public class MainActivity extends AppCompatActivity {
 
                     simulateTreeOn(calc, total, index);
                 }
-            } calc.removeAll(Arrays.asList("#", null));
+            }
+            calc.removeAll(Arrays.asList("#", null));
 
-            Formatter opt = new Formatter(new StringBuilder(), Locale.GERMANY); // US Fck
+            Formatter opt = new Formatter(new StringBuilder(), Locale.GERMANY);
             String finalResult = String.valueOf(opt.format("%,.2f", Double.parseDouble(calc.get(0))));
             finalResult = (finalResult.endsWith(",00")) ? finalResult.substring(0, finalResult.length() - 3) : finalResult;
 
@@ -130,7 +127,6 @@ public class MainActivity extends AppCompatActivity {
 
         if (current.length() > 20) return;
         if (processed) result.setText("0");
-        System.out.println("Process : " + current);
 
         if (current.length() == 1 && current.equals("0"))
             process.setText((numb.matches(".*[−+×÷].*")) ? "0" + numb : numb);
@@ -146,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
         String formatted = "";
         for (String x : split) {
             if (!x.matches(".*[−+×÷].*"))
-                x = String.format("%,d", Long.parseLong(x.replaceAll("\\.", "")));
+                x = String.format(Locale.GERMANY, "%,d", Long.parseLong(x.replaceAll("\\.", "")));
 
             formatted = String.join("", formatted, x);
         }
@@ -171,7 +167,6 @@ public class MainActivity extends AppCompatActivity {
     private void clearAll() {
         this.process.setText("0");
         this.result.setVisibility(View.GONE);
-        onOperation = false;
-        processed = false;
+        this.processed = false;
     }
 }
