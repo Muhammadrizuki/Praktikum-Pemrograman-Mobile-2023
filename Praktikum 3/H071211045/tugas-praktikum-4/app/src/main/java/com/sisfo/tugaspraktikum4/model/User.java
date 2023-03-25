@@ -38,8 +38,6 @@ public class User implements Parcelable {
             return new User[size];
         }
     };
-
-
     /* End of Parcelable Implementation */
 
     public void setProfilePicture(Uri profilePicture) {

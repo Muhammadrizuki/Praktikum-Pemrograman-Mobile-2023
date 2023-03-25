@@ -43,15 +43,13 @@ public class MainActivity extends AppCompatActivity {
         username = findViewById(R.id.username_input);
         submit = findViewById(R.id.submit_user);
 
-        // Change the profile picture by using photo launcher and save it for the next activity
         profilePicture.setOnClickListener(v -> {
             Intent intent = new Intent("android.intent.action.PICK", MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
             photoLauncher.launch(Intent.createChooser(intent, "Choose a photo"));
         });
 
-        // Extract the changed profile picture's URI and pass it to the user object by using intent
         submit.setOnClickListener(v -> {
-            if (profilePicture.getDrawable() == null) {
+            if (user.getProfilePicture() == null) {
                 Toast.makeText(this, "Please pick a profile picture first!", Toast.LENGTH_SHORT).show();
 
             } else if (fullName.getText().toString().isEmpty() || username.getText().toString().isEmpty()) {

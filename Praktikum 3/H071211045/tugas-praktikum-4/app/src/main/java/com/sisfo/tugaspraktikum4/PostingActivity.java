@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.sisfo.tugaspraktikum4.model.User;
 
@@ -47,6 +48,11 @@ public class PostingActivity extends AppCompatActivity {
 
         // Extract the changed post picture's URI and pass it to the user object by using intent
         postButton.setOnClickListener(v -> {
+            if (postURI == null) {
+                Toast.makeText(this, "Please pick a post picture first!", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
             user.setPostPicture(postURI);
             user.setPostDescription(postDescription.getText().toString());
             Intent result = new Intent(this, ResultActivity.class).putExtra("user", user);
