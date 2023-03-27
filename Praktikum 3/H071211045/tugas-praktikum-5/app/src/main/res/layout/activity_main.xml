@@ -96,7 +96,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
             android:layout_marginTop="16dp"
-            android:hint="Enter your name"
+            android:hint="Enter your nickname"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:padding="8dp"
             android:textColorHint="@color/white">
@@ -126,6 +126,5 @@
         android:textSize="18sp"
         android:padding="8dp"
         android:text="S T A R T"/>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

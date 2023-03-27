@@ -18,4 +18,14 @@
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">50%</item>
     </style>
+
+    <style name="choiceButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textSize">12sp</item>
+        <item name="backgroundTint">@color/semi_purple</item>
+
+    </style>
 </resources>
