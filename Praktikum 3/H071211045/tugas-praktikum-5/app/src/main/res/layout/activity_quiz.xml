@@ -24,7 +24,7 @@
             android:textSize="24sp"
             android:textColor="@color/text_purple"
             android:textStyle="bold"
-            android:text="Question 1" />
+            android:text="Question 1"/>
 
         <TextView
             android:id="@+id/question_count"
@@ -33,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/text_purple"
-            android:text="/10"/>
+            android:text="/5"/>
 
     </RelativeLayout>
 
@@ -55,7 +55,6 @@
         android:textSize="20sp"
         android:layout_marginHorizontal="32dp"
         android:textStyle="bold"
-        android:justificationMode="inter_word"
         app:layout_constraintTop_toBottomOf="@id/line"
         android:text="Sofyan apa yang Pujas dan bagaimana bisa Sofyan menjadi pujas?"/>
 
@@ -72,6 +71,7 @@
             android:id="@+id/choice1"
             style="@style/choiceButton"
             android:layout_marginTop="10dp"
+            android:onClick="choiceSelected"
             android:text="Sofyan apa yang Pujas "/>
 
         <Button

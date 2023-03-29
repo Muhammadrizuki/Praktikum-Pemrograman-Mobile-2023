@@ -1,18 +1,40 @@
 package com.sisfo.tugaspraktikum5;
 
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Parcel;
+import android.provider.MediaStore;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
-public class MainActivity extends AppCompatActivity {
+import com.sisfo.tugaspraktikum5.model.Player;
 
-    Button startButton;
-    EditText nameInput;
-    ImageView profilePictureInput;
+public class MainActivity extends AppCompatActivity {
+    private Button startButton;
+    private EditText nameInput;
+    private Player player;
+    private Uri profilePicture;
+    private ImageView profilePictureInput;
+
+    private final ActivityResultLauncher<Intent> photoLauncher = registerForActivityResult(
+            new ActivityResultContracts.StartActivityForResult(), photo -> {
+                if (photo.getResultCode() == RESULT_OK) {
+                    Intent data = photo.getData();
+                    profilePicture = data.getData();
+
+                    if (data != null)
+                        profilePictureInput.setImageURI(this.profilePicture);
+                }
+            }
+    );
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,13 +44,16 @@ public class MainActivity extends AppCompatActivity {
         nameInput = findViewById(R.id.name_input);
         startButton = findViewById(R.id.start_button);
 
+        profilePictureInput.setOnClickListener(v -> {
+            Intent intent = new Intent("android.intent.action.PICK", MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+            photoLauncher.launch(Intent.createChooser(intent, "Choose a photo"));
+        });
+
         startButton.setOnClickListener(v -> {
             String name = nameInput.getText().toString();
-            String profilePicture = profilePictureInput.toString();
-            Intent intent = new Intent(this, ScoreActivity.class);
-//            intent.putExtra("name", name);
-//            intent.putExtra("profilePicture", profilePicture);
-            startActivity(intent);
+            player = new Player(name, profilePicture);
+
+            startActivity(new Intent(this, QuizActivity.class).putExtra("player", player));
         });
     }
 }
