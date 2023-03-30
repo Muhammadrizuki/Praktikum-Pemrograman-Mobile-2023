@@ -68,11 +68,8 @@ public class QuizActivity extends AppCompatActivity {
     @SuppressLint("DefaultLocale")
     private void renderQuestion() {
         if (qIndex == quiz.size()) {
-            Intent intent = new Intent(this, ScoreActivity.class);
-            System.out.println(score + "pts");
             player.setScore(score);
-            intent.putExtra("player", player);
-            startActivity(intent);
+            startActivity(new Intent(this, ScoreActivity.class).putExtra("player", player));
             finish();
             return;
 

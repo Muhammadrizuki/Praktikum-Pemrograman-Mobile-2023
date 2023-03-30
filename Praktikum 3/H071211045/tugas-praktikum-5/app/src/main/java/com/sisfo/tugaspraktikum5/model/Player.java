@@ -8,9 +8,9 @@ import androidx.annotation.NonNull;
 
 
 public class Player implements Parcelable {
-    private final String playerName;
-    private final Uri profilePicture;
-    private int score;
+    public String playerName;
+    public Uri profilePicture;
+    public int score, highScore;
 
     public Player(String name, Uri profilePicture) {
         this.playerName = name;
@@ -21,6 +21,7 @@ public class Player implements Parcelable {
         playerName = in.readString();
         profilePicture = in.readParcelable(Uri.class.getClassLoader());
         score = in.readInt();
+        highScore = in.readInt();
     }
 
     public static final Creator<Player> CREATOR = new Creator<Player>() {
@@ -35,12 +36,8 @@ public class Player implements Parcelable {
         }
     };
 
-    public String getName() {
-        return this.playerName;
-    }
-
-    public Uri getProfilePicture() {
-        return this.profilePicture;
+    public void setHighScore(int highScore) {
+        this.highScore = highScore;
     }
 
     public void setScore(int score) {
@@ -49,6 +46,18 @@ public class Player implements Parcelable {
 
     public int getScore() {
         return this.score;
+    }
+
+    public String getName() {
+        return this.playerName;
+    }
+
+    public Uri getProfilePicture() {
+        return this.profilePicture;
+    }
+
+    public int getHighScore() {
+        return this.highScore;
     }
 
     @Override
@@ -61,5 +70,6 @@ public class Player implements Parcelable {
         parcel.writeString(playerName);
         parcel.writeParcelable(profilePicture, i);
         parcel.writeInt(score);
+        parcel.writeInt(highScore);
     }
 }

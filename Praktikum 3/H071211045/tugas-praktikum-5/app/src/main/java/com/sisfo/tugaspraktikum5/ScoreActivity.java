@@ -3,12 +3,12 @@ package com.sisfo.tugaspraktikum5;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.sisfo.tugaspraktikum5.model.Player;
 
 public class ScoreActivity extends AppCompatActivity {
@@ -18,7 +18,7 @@ public class ScoreActivity extends AppCompatActivity {
     private ImageView profilePicture;
     private ImageButton back;
     private Player player;
-
+    private Uri playerImage;
     private int score, highScore;
 
     @Override
@@ -29,23 +29,27 @@ public class ScoreActivity extends AppCompatActivity {
         player = getIntent().getParcelableExtra("player");
         score = player.getScore();
 
+        playerImage = player.getProfilePicture();
+
         playAgain = findViewById(R.id.play_again);
         back = findViewById(R.id.back);
         scoreTv = findViewById(R.id.score);
         highScoreTv = findViewById(R.id.high_score);
         usernameTv = findViewById(R.id.username);
-        profilePicture = findViewById(R.id.profile_picture);
 
-        System.out.println("Score: " + score);
+        profilePicture = findViewById(R.id.profile_picture);
+        profilePicture.setImageURI(playerImage);
+
 
         if (score >= highScore) {
             highScore = score;
-        }
+            player.setHighScore(highScore);
+            highScoreTv.setText(String.valueOf(highScore));
+
+        } else highScoreTv.setText(player.getHighScore());
 
         scoreTv.setText(String.valueOf(score));
-        highScoreTv.setText(String.valueOf(highScore));
         usernameTv.setText(player.getName());
-        profilePicture.setImageURI(player.getProfilePicture());
 
         playAgain.setOnClickListener(v -> {
             startActivity(new Intent(this, QuizActivity.class).putExtra("player", player));
@@ -53,7 +57,7 @@ public class ScoreActivity extends AppCompatActivity {
         });
 
         back.setOnClickListener(v -> {
-            startActivity(new Intent(this, MainActivity.class));
+            startActivity(new Intent(this, MainActivity.class).putExtra("player", player));
             finish();
         });
     }

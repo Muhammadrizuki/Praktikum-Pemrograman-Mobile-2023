@@ -2,13 +2,11 @@ package com.sisfo.tugaspraktikum5;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Parcel;
 import android.provider.MediaStore;
 import android.widget.Button;
 import android.widget.EditText;
@@ -19,8 +17,8 @@ import com.sisfo.tugaspraktikum5.model.Player;
 public class MainActivity extends AppCompatActivity {
     private Button startButton;
     private EditText nameInput;
-    private Player player;
-    private Uri profilePicture;
+    public Player player;
+    public Uri profilePicture;
     private ImageView profilePictureInput;
 
     private final ActivityResultLauncher<Intent> photoLauncher = registerForActivityResult(
@@ -28,9 +26,7 @@ public class MainActivity extends AppCompatActivity {
                 if (photo.getResultCode() == RESULT_OK) {
                     Intent data = photo.getData();
                     profilePicture = data.getData();
-
-                    if (data != null)
-                        profilePictureInput.setImageURI(this.profilePicture);
+                    profilePictureInput.setImageURI(profilePicture);
                 }
             }
     );
@@ -43,6 +39,12 @@ public class MainActivity extends AppCompatActivity {
         profilePictureInput = findViewById(R.id.profile_picture_input);
         nameInput = findViewById(R.id.name_input);
         startButton = findViewById(R.id.start_button);
+
+        if (getIntent().getParcelableExtra("player") != null) {
+            player = getIntent().getParcelableExtra("player");
+            nameInput.setText(player.getName());
+            profilePictureInput.setImageURI(player.getProfilePicture());
+        }
 
         profilePictureInput.setOnClickListener(v -> {
             Intent intent = new Intent("android.intent.action.PICK", MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
@@ -58,8 +60,8 @@ public class MainActivity extends AppCompatActivity {
             }
 
             player = new Player(name, profilePicture);
-
             startActivity(new Intent(this, QuizActivity.class).putExtra("player", player));
+            finish();
         });
     }
 }
