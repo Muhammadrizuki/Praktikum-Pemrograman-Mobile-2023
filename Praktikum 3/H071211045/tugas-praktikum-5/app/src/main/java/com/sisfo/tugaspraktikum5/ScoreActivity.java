@@ -19,12 +19,15 @@ public class ScoreActivity extends AppCompatActivity {
     private ImageButton back;
     private Player player;
 
-    private int highScore = 0;
+    private int score, highScore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_score);
+
+        player = getIntent().getParcelableExtra("player");
+        score = player.getScore();
 
         playAgain = findViewById(R.id.play_again);
         back = findViewById(R.id.back);
@@ -33,10 +36,9 @@ public class ScoreActivity extends AppCompatActivity {
         usernameTv = findViewById(R.id.username);
         profilePicture = findViewById(R.id.profile_picture);
 
-        player = getIntent().getParcelableExtra("player");
-        int score = getIntent().getIntExtra("score", 0);
+        System.out.println("Score: " + score);
 
-        if (score > highScore) {
+        if (score >= highScore) {
             highScore = score;
         }
 

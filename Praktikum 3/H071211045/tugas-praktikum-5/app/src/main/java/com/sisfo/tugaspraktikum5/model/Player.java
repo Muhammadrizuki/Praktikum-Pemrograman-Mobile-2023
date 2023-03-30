@@ -60,5 +60,6 @@ public class Player implements Parcelable {
     public void writeToParcel(@NonNull Parcel parcel, int i) {
         parcel.writeString(playerName);
         parcel.writeParcelable(profilePicture, i);
+        parcel.writeInt(score);
     }
 }

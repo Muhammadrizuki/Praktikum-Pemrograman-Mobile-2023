@@ -51,6 +51,12 @@ public class MainActivity extends AppCompatActivity {
 
         startButton.setOnClickListener(v -> {
             String name = nameInput.getText().toString();
+
+            if (name.isEmpty()) {
+                nameInput.setError("Name cannot be empty!");
+                return;
+            }
+
             player = new Player(name, profilePicture);
 
             startActivity(new Intent(this, QuizActivity.class).putExtra("player", player));

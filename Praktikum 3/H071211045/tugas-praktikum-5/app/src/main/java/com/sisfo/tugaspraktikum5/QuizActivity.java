@@ -20,11 +20,14 @@ public class QuizActivity extends AppCompatActivity {
     private Quiz q;
     private List<Quiz> quiz;
     private int score = 0, qIndex = 0;
+    private Player player;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
+
+        player = getIntent().getParcelableExtra("player");
 
         q = new Quiz(findViewById(R.id.choice1), findViewById(R.id.choice2), findViewById(R.id.choice3), findViewById(R.id.choice4));
         q.setContext(this);
@@ -66,7 +69,7 @@ public class QuizActivity extends AppCompatActivity {
     private void renderQuestion() {
         if (qIndex == quiz.size()) {
             Intent intent = new Intent(this, ScoreActivity.class);
-            Player player = this.getIntent().getParcelableExtra("player");
+            System.out.println(score + "pts");
             player.setScore(score);
             intent.putExtra("player", player);
             startActivity(intent);
@@ -84,25 +87,4 @@ public class QuizActivity extends AppCompatActivity {
             q.choiceButton[i].setEnabled(true);
         }
     }
-
-//    public void quizDebug(/* Buat nge cheat hahaha */) {
-//        System.out.println("\nNOMOR   : " + (qIndex+1));
-//        System.out.println("SCORE   : " + score);
-//        char jawaban = 'A';
-//        switch (q.getQuiz().get(qIndex).getAnswerIndex()) {
-//            case 0:
-//                jawaban = 'A';
-//                break;
-//            case 1:
-//                jawaban = 'B';
-//                break;
-//            case 2:
-//                jawaban = 'C';
-//                break;
-//            case 3:
-//                jawaban = 'D';
-//                break;
-//        }
-//        System.out.println("JAWABAN : " + jawaban);
-//    }
 }
