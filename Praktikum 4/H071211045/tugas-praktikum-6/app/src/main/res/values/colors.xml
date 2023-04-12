@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--  Basics  -->
+    <color name="white">#EDF8F5</color>
+    <color name="grey">#D0E9EA</color>
+    <color name="cream">#c5caca</color>
+    <color name="dark">#111d27</color>
+    <color name="dark_papilaya">#222a35</color>
+    <color name="black">#FF000000</color>
+
+<!--  Palette  -->
+    <color name="performant_green_bali">#e7ffdb</color>
+    <color name="light_green_bali">#1EBEA5</color>
+    <color name="green_bali">#008069</color>
+    <color name="dark_green_bali">#075E54</color>
+    <color name="green_papilaya">#0f5248</color>
+
+</resources>
