@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="end">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_chat"
+        android:orientation="vertical"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/chats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yuhuiii tes tes tes"
+            android:textColor="@color/white"
+            android:textSize="15dp"/>
+        <TextView
+            android:id="@+id/jams"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00.00"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            android:layout_gravity="end"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
