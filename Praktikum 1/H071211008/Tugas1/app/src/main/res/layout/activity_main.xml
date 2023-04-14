@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:padding="20dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_card"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:cardCornerRadius="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_profil"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/propil" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abril_fatface"
+        android:text="Besse Sahriyuni"
+        android:textColor="@color/coklat"
+        android:layout_marginTop="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_card"/>
+
+    <TextView
+        android:id="@+id/tv_nim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="H071211008"
+        android:textSize="25sp"
+        android:textColor="@color/coklat"
+        android:textStyle="bold"
+        android:fontFamily="@font/aladin"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nama"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/ll_angka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_nim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_no1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="21"
+                android:gravity="center"
+                android:textSize="35sp"
+                android:textColor="@color/coklat"
+                android:fontFamily="@font/aladin"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_repo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/coklat"
+                android:gravity="center"
+                android:text="Repositories"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_no2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2k"
+                android:gravity="center"
+                android:textSize="35sp"
+                android:fontFamily="@font/aladin"
+                android:textStyle="bold"
+                android:textColor="@color/coklat"/>
+
+            <TextView
+                android:id="@+id/tv_followers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Followers"
+                android:gravity="center"
+                android:textColor="@color/coklat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_no3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="321"
+                android:gravity="center"
+                android:textSize="35sp"
+                android:textColor="@color/coklat"
+                android:fontFamily="@font/aladin"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tv_following"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Following"
+                android:gravity="center"
+                android:textColor="@color/coklat" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:layout_marginTop="10dp"
+        android:textSize="35sp"
+        android:textColor="@color/coklat"
+        android:fontFamily="@font/aladin"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/ll_angka"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lorem"
+        android:textColor="@color/coklat"
+        app:layout_constraintTop_toBottomOf="@+id/tv_about"
+        app:layout_constraintStart_toStartOf="@id/tv_about"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
