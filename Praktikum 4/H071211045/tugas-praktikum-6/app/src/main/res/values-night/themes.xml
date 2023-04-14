@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TugasPraktikum6" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorOnSurface">@color/black</item>
+        <item name="colorPrimary">@color/dark_green_bali</item>
+        <item name="colorPrimaryVariant">@color/green_papilaya</item>
+        <item name="colorPrimaryDark">@color/green_bali</item>
+
+        <item name="colorSecondary">@color/light_green_bali</item>
+
+        <!-- Bubble Chat -->
+        <item name="colorPrimaryContainer">@color/green_bali</item>
+        <item name="colorSecondaryContainer">@color/dark_papilaya</item>
+
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+    </style>
+</resources>

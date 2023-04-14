@@ -1,0 +1,81 @@
+{
+  "contacts": [
+    {
+      "number": "+1 205-779-6380",
+      "name": "Barrack Hossein Yomama",
+      "status": "Retired life.",
+      "status_date": "December 12, 2015",
+      "profile_pic": "https://i.postimg.cc/N0392Twd/obama.jpg"
+    },
+    {
+      "number": "+62 852-1570-2573",
+      "name": "Sofyan Pujas",
+      "status": "Sibuk",
+      "status_date": "November 18, 2020",
+      "profile_pic": "https://i.ibb.co/jWmtNkt/Sofyan-Balita.jpg"
+    },
+    {
+      "number": "+1 505-550-0988",
+      "name": "Joe Al-Birudin",
+      "status": "Ice cream and 8y.o girl, what a life!",
+      "status_date": "January 01, 2023",
+      "profile_pic": "https://i.postimg.cc/SNLxD3b7/joe-biden.jpg"
+    },
+    {
+      "number": "+7 998 878-27-00",
+      "name": "Hj. Vladimir bin Putin",
+      "status": "I'm the president of Russia, what do you think?",
+      "status_date": "March 20, 2021",
+      "profile_pic": "https://i.postimg.cc/Hnwygtjq/putin.jpg"
+    },
+    {
+      "number": "+62 869-033-513",
+      "name": "Ahmad Soehartono",
+      "status": "Piye kabare enak jamanku toh?",
+      "status_date": "January 27, 2008",
+      "profile_pic": "https://i.postimg.cc/KYYccDp6/soeharto.jpg"
+    },
+    {
+      "number": "+964 750 490 9866",
+      "name": "Saddam Brozayn",
+      "status": "Damn Americans.",
+      "status_date": "December 30, 2006",
+      "profile_pic": "https://i.postimg.cc/qq6XPndn/saddam.jpg"
+    },
+    {
+      "number": "+49 1597 8362383",
+      "name": "Kyai Hj. Albert Einstein",
+      "status": "Black hole is relative to your mom per time.",
+      "status_date": "April 18, 1955",
+      "profile_pic": "https://i.postimg.cc/nLsC4969/albert.jpg"
+    },
+    {
+      "number": "+44 7500 395924",
+      "name": "Isaac Daeng Newtono",
+      "status": "Gravity is a myth.",
+      "status_date": "March 31, 1272",
+      "profile_pic": "https://i.postimg.cc/VkXRDjYb/newton.jpg"
+    },
+    {
+      "number": "+1 505-644-6985",
+      "name": "Muhammad Zuckerbego",
+      "status": "Metaverse :3",
+      "status_date": "July 01, 2022",
+      "profile_pic": "https://i.postimg.cc/CL7PgCyT/mark.png"
+    },
+    {
+      "number": "+62 819-9782-4683",
+      "name": "Herdimangga Purnama",
+      "status": "Sibuk",
+      "status_date": "November 18, 2020",
+      "profile_pic": ""
+    },
+    {
+      "number": "+1 505-0911-0911",
+      "name": "Orgy W. Buzz",
+        "status": "You want us to bring some freedom, eh?",
+        "status_date": "January 01, 1999",
+        "profile_pic": "https://i.ibb.co/brHnwWt/bush.jpg"
+    }
+  ]
+}
