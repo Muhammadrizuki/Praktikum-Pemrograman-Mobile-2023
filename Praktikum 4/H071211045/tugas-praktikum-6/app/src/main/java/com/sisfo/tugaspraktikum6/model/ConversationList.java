@@ -11,6 +11,7 @@ import com.google.gson.annotations.SerializedName;
 import java.util.ArrayList;
 import java.util.List;
 
+<<<<<<< Updated upstream
 public class ConversationList implements Parcelable {
     @SerializedName("conversations")
     private List<Conversation> conversations = new ArrayList<>();
@@ -30,10 +31,16 @@ public class ConversationList implements Parcelable {
         }
     };
 
+=======
+public class ConversationList {
+    @SerializedName("conversations")
+    private List<Conversation> conversations = new ArrayList<>();
+>>>>>>> Stashed changes
     public List<Conversation> list() {
         return conversations;
     }
 
+<<<<<<< Updated upstream
     @Override
     public int describeContents() {
         return 0;
@@ -43,4 +50,6 @@ public class ConversationList implements Parcelable {
     public void writeToParcel(@NonNull Parcel parcel, int i) {
         parcel.writeList(conversations);
     }
+=======
+>>>>>>> Stashed changes
 }

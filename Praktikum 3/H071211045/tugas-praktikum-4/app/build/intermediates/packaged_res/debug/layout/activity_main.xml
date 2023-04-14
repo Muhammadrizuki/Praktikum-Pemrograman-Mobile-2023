@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profile_input"
+        android:layout_width="172dp"
+        android:layout_height="172dp"
+        android:src="@drawable/icon"
+        app:shapeAppearanceOverlay="@style/circularImage"
+        android:scaleType="centerCrop"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Full Name"
+        android:layout_marginHorizontal="42dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/full_name_input"
+            style="@style/inputText" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Username"
+        android:layout_marginHorizontal="42dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username_input"
+            style="@style/inputText" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/submit_user"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:paddingVertical="12dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:text="Submit"/>
+</LinearLayout>

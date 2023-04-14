@@ -6,6 +6,10 @@
     <color name="grey">#D0E9EA</color>
     <color name="cream">#c5caca</color>
     <color name="dark">#111d27</color>
+<<<<<<< Updated upstream
+=======
+    <color name="dark_grey">#171718</color>
+>>>>>>> Stashed changes
     <color name="dark_papilaya">#222a35</color>
     <color name="black">#FF000000</color>
 

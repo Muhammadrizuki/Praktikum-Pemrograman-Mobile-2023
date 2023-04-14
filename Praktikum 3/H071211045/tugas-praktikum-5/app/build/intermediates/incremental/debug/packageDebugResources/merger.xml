@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res"/><source path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/build/generated/res/rs/debug"/><source path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res"><file name="ic_launcher" path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" qualifiers="anydpi-v26" type="mipmap"/><file name="ic_launcher" path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" qualifiers="anydpi-v26" type="mipmap"/><file path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/values-night/themes.xml" qualifiers="night-v8"><style name="Theme.TugasPraktikum5" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    
+    <item name="colorPrimary">@color/purple_500</item>
+    <item name="colorPrimaryVariant">@color/purple_700</item>
+    <item name="colorOnPrimary">@color/white</item>
+    
+    <item name="colorSecondary">@color/teal_200</item>
+    <item name="colorSecondaryVariant">@color/teal_700</item>
+    <item name="colorOnSecondary">@color/black</item>
+    
+    <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    
+</style></file><file name="ic_launcher" path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" qualifiers="xxxhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" qualifiers="xxxhdpi-v4" type="mipmap"/><file name="baseline_keyboard_backspace_24" path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/drawable/baseline_keyboard_backspace_24.xml" qualifiers="" type="drawable"/><file name="dotted_line" path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/drawable/dotted_line.xml" qualifiers="" type="drawable"/><file name="back_button" path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/drawable/back_button.xml" qualifiers="" type="drawable"/><file name="wave" path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/drawable/wave.xml" qualifiers="" type="drawable"/><file name="bg_quiz" path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/drawable/bg_quiz.xml" qualifiers="" type="drawable"/><file name="container_glass" path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/drawable/container_glass.xml" qualifiers="" type="drawable"/><file name="star_line" path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/drawable/star_line.xml" qualifiers="" type="drawable"/><file name="container_pappi" path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/drawable/container_pappi.xml" qualifiers="" type="drawable"/><file name="baseline_photo_camera_24" path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/drawable/baseline_photo_camera_24.xml" qualifiers="" type="drawable"/><file name="github_logo" path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/drawable/github_logo.png" qualifiers="" type="drawable"/><file name="bg_main" path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/drawable/bg_main.xml" qualifiers="" type="drawable"/><file name="ic_launcher_background" path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/drawable/ic_launcher_background.xml" qualifiers="" type="drawable"/><file name="baseline_star_24" path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/drawable/baseline_star_24.xml" qualifiers="" type="drawable"/><file name="baseline_face_24" path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/drawable/baseline_face_24.xml" qualifiers="" type="drawable"/><file name="ic_launcher" path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/mipmap-mdpi/ic_launcher.webp" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher" path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/mipmap-anydpi-v33/ic_launcher.xml" qualifiers="anydpi-v33" type="mipmap"/><file name="ic_launcher" path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/mipmap-hdpi/ic_launcher.webp" qualifiers="hdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" qualifiers="hdpi-v4" type="mipmap"/><file name="data_extraction_rules" path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/xml/data_extraction_rules.xml" qualifiers="" type="xml"/><file name="backup_rules" path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/xml/backup_rules.xml" qualifiers="" type="xml"/><file path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/values/quiz.xml" qualifiers=""><string name="q1">Apa fungsi utama dari commit pada git?</string><string-array name="c1">
+        <item>Menyimpan rahasia kedalam git.</item>
+        <item>Menyimpan perubahan yang telah dilakukan dalam pengembangan.</item>
+        <item>Menyimpan pesan pengembang kedalam suatu fitur.</item>
+        <item>Menyimpan branch kedalam repository upstream dari tim pengembang.</item>
+    </string-array><string name="q2">Apa fungsi dari push pada git?</string><string-array name="c2">
+        <item>Mengupload hasil commit dari local-machine ke origin.</item>
+        <item>Mengupload source code ke server tanpa diketahui orang lain.</item>
+        <item>Mengupload dan membuang hasil commit sebelumnya dari local-machine.</item>
+        <item>Mengupload isi hati developer kedalam origin.</item>
+    </string-array><string name="q3">Bagaimana cara mengembalikan commit lama yang telah tertimpa oleh commit terbaru?</string><string-array name="c3">
+        <item>git revert</item>
+        <item>git reset</item>
+        <item>git checkout</item>
+        <item>git commit</item>
+    </string-array><string name="q4">Apa keuntungan dari penggunaan Git Version Control?</string><string-array name="c4">
+        <item>Menyulitkan tim pengembang.</item>
+        <item>Mempersulit anggota newbie agar kelihatan keren.</item>
+        <item>Mempermudah dalam melakukan pengembangan aplikasi secara bersama</item>
+        <item>Mempermudah terjadinya kesalahan pengembangan fitur.</item>
+    </string-array><string name="q5">Kapan seseorang perlu melakukan pull request?</string><string-array name="c5">
+        <item>Setiap setelah melakukan commit</item>
+        <item>Setiap mengupload hasil kerja.</item>
+        <item>Setiap terjadi kesalahan pengembangan.</item>
+        <item>Setiap ingin menyatukan pekerjaan dari sebuah branch.</item>
+    </string-array><string name="q6">Bagaimana cara kerja branching pada git?</string><string-array name="c6">
+        <item>Memisahkan branch dari master (fork).</item>
+        <item>Memisahkan branch dari origin.</item>
+        <item>Memisahkan branch dari upstream.</item>
+        <item>Memisahkan branch dari local-machine.</item>
+    </string-array><string name="q7">Apa yang akan terjadi jika anda memasukan command git status?</string><string-array name="c7">
+        <item>Menampilkan status dari branch yang sedang tidak aktif.</item>
+        <item>Menampilkan status dari branch yang sedang aktif dan tidak aktif.</item>
+        <item>Menampilkan status dari branch yang sedang aktif.</item>
+        <item>Menampilkan status dari branch yang sedang aktif dan tidak aktif serta branch yang telah ter-merge.</item>
+    </string-array><string name="q8">Bagaimana cara anda menemukan file yang telah berubah akibat commit tertentu?</string><string-array name="c8">
+        <item>git log</item>
+        <item>git status</item>
+        <item>git checkout</item>
+        <item>git diff</item>
+    </string-array><string name="q9">Bagaimana cara Anda memulihkan branch yang sebelumnya terjadi perubahan di repositori utama namun secara kebetulan terhapus dari mesin lokal setiap anggota tim?</string><string-array name="c9">
+        <item>Reflog pada commit terbaru dari branch master.</item>
+        <item>Reflog pada commit terbaru dari beberapa branch.</item>
+        <item>Reflog pada commit terbaru dari branch origin.</item>
+        <item>Reflog pada commit terbaru dari branch upstream.</item>
+    </string-array><string name="q10">Command apa yang digunakan untuk membantu kita mengetahui branch yang telah ter-merge kedalam master?</string><string-array name="c10">
+        <item>git reset</item>
+        <item>git revert</item>
+        <item>git checkout</item>
+        <item>git branch</item>
+    </string-array></file><file path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/values/colors.xml" qualifiers=""><color name="purple_200">#FFBB86FC</color><color name="purple_500">#FF6200EE</color><color name="purple_700">#FF3700B3</color><color name="teal_200">#FF03DAC5</color><color name="teal_700">#FF018786</color><color name="black">#FF000000</color><color name="white">#FFFFFFFF</color><color name="text_purple">#A1ABE2</color><color name="semi_purple">#3F51B5</color><color name="grey_pappi">#A8A8A8</color><color name="green_sky">#14C56E</color></file><file path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/values/strings.xml" qualifiers=""><string name="app_name">Tugas Praktikum 5</string></file><file path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/values/themes.xml" qualifiers=""><style name="Theme.TugasPraktikum5" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        
+    </style><style name="circularImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style><style name="choiceButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textSize">12sp</item>
+        <item name="backgroundTint">@color/semi_purple</item>
+
+    </style></file><file name="ic_launcher_foreground" path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" qualifiers="v24" type="drawable"/><file name="ic_launcher" path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" qualifiers="xxhdpi-v4" type="mipmap"/><file name="activity_main" path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/layout/activity_main.xml" qualifiers="" type="layout"/><file name="activity_quiz" path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/layout/activity_quiz.xml" qualifiers="" type="layout"/><file name="activity_score" path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/layout/activity_score.xml" qualifiers="" type="layout"/></source><source path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/build/generated/res/rs/debug"/><source path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"/><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"/><mergedItems/></merger>

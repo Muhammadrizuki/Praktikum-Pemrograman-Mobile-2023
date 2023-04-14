@@ -10,6 +10,7 @@ import com.google.gson.annotations.SerializedName;
 import java.util.ArrayList;
 import java.util.List;
 
+<<<<<<< Updated upstream
 public class ContactBook implements Parcelable {
     @SerializedName("contacts")
     private List<Contact> contacts = new ArrayList<>();
@@ -41,4 +42,13 @@ public class ContactBook implements Parcelable {
     public void writeToParcel(@NonNull Parcel parcel, int i) {
         parcel.writeList(contacts);
     }
+=======
+public class ContactBook {
+    @SerializedName("contacts")
+    private List<Contact> contacts = new ArrayList<>();
+
+    public List<Contact> list() {
+        return contacts;
+    }
+>>>>>>> Stashed changes
 }

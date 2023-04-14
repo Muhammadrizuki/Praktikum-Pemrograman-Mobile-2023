@@ -27,8 +27,11 @@
         </shape>
     </item>
 
+<<<<<<< Updated upstream
     <!--===============-->
 
+=======
+>>>>>>> Stashed changes
     <item>
         <rotate
             android:fromDegrees="40"
@@ -50,8 +53,11 @@
         </shape>
     </item>
 
+<<<<<<< Updated upstream
     <!--===============-->
 
+=======
+>>>>>>> Stashed changes
     <item>
         <rotate
             android:fromDegrees="40"
@@ -79,11 +85,15 @@
         </shape>
     </item>
 
+<<<<<<< Updated upstream
     <!--===============-->
 
 
     <!--ForeGround-->
 
+=======
+<!-- YASSALAM -->
+>>>>>>> Stashed changes
     <item>
         <rotate
             android:fromDegrees="40"
