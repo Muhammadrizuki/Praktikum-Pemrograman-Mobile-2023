@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="6dp"
+    android:background="#2B2B2B">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_user1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#404040"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp">
+        <TextView
+            android:id="@+id/tv_user1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hsdgkhgbjni"
+            android:padding="10sp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#385C2B"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/cv_user1">
+        <TextView
+            android:id="@+id/tv_user2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hsdgkhgbjni"
+            android:padding="10sp"/>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
