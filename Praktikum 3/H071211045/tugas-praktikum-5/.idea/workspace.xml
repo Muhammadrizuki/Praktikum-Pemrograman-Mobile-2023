@@ -9,13 +9,17 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b541a49-2d45-4fb8-94ed-1b611e45e783" name="Changes" comment="" />
+    <list default="true" id="0b541a49-2d45-4fb8-94ed-1b611e45e783" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/home/sofyanox12/.android/avd/Zech.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/home/sofyanox12/.android/avd/Pimplebean_Pro.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -54,7 +58,7 @@
     "RunOnceActivity.cidr.known.project.marker": "true",
     "cidr.known.project.marker": "true",
     "last_directory_selection": "/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5/app/src/main/res/drawable",
-    "last_opened_file_path": "/home/sofyanox12/Workplace/intent-practice",
+    "last_opened_file_path": "/home/sofyanox12/Workplace/mobile-practicum/Praktikum 3/H071211045/tugas-praktikum-5",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
