@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:id="@+id/calcButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginBottom="8dp"
+        android:columnCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Interactions Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/clearBtn"
+            style="@style/Button.Calculator"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:backgroundTint="@color/semi_dark"
+            android:onClick="interact"
+            android:text="AC"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/backspaceBtn"
+            style="@style/Button.Calculator"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:backgroundTint="@color/semi_dark"
+            android:onClick="interact"
+            android:text="@string/backspace" />
+
+        <!-- Numbers Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/zeroBtn"
+            style="@style/Button.Calculator"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:backgroundTint="@color/grey"
+            android:onClick="cumulate"
+            android:text="@string/zero" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/oneBtn"
+            style="@style/Button.Calculator"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:backgroundTint="@color/grey"
+            android:onClick="cumulate"
+            android:text="@string/one" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/twoBtn"
+            style="@style/Button.Calculator"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:backgroundTint="@color/grey"
+            android:onClick="cumulate"
+            android:text="@string/two" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/threeBtn"
+            style="@style/Button.Calculator"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:backgroundTint="@color/grey"
+            android:onClick="cumulate"
+            android:text="@string/three" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/fourBtn"
+            style="@style/Button.Calculator"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:backgroundTint="@color/grey"
+            android:onClick="cumulate"
+            android:text="@string/four" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/fiveBtn"
+            style="@style/Button.Calculator"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:backgroundTint="@color/grey"
+            android:onClick="cumulate"
+            android:text="@string/five" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sixBtn"
+            style="@style/Button.Calculator"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:backgroundTint="@color/grey"
+            android:onClick="cumulate"
+            android:text="@string/six" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sevenBtn"
+            style="@style/Button.Calculator"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:backgroundTint="@color/grey"
+            android:onClick="cumulate"
+            android:text="@string/seven" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/eightBtn"
+            style="@style/Button.Calculator"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:backgroundTint="@color/grey"
+            android:onClick="cumulate"
+            android:text="@string/eight" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nineBtn"
+            style="@style/Button.Calculator"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:backgroundTint="@color/grey"
+            android:onClick="cumulate"
+            android:text="@string/nine" />
+
+        <!-- Operations Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/divideBtn"
+            style="@style/Button.Calculator"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:backgroundTint="@color/orange"
+            android:onClick="operator"
+            android:text="@string/divide" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/multiplyBtn"
+            style="@style/Button.Calculator"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:backgroundTint="@color/orange"
+            android:onClick="operator"
+            android:text="@string/multiply" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/minusBtn"
+            style="@style/Button.Calculator"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:backgroundTint="@color/orange"
+            android:onClick="operator"
+            android:text="@string/minus" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/plusBtn"
+            style="@style/Button.Calculator"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:backgroundTint="@color/orange"
+            android:onClick="operator"
+            android:text="@string/plus" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/calculateBtn"
+            style="@style/Button.Calculator"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:layout_columnSpan="2"
+            android:backgroundTint="@color/orange"
+            android:onClick="operator"
+            android:text="@string/equals" />
+    </GridLayout>
+
+    <EditText
+        android:id="@+id/process"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:gravity="end"
+        android:backgroundTint="@color/dark"
+        android:text="@string/zero"
+        android:textIsSelectable="true"
+        android:focusable="false"
+        android:textColorHighlight="@color/grey"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/calcButtons"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/process"
+        android:layout_marginHorizontal="8dp">
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/zero"
+            android:textColor="@color/grey"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textIsSelectable="true"/>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

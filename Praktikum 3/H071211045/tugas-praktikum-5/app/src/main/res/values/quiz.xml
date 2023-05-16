@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="q1">Apa fungsi utama dari commit pada git?</string>
+    <string-array name="c1">
+        <item>Menyimpan rahasia kedalam git.</item>
+        <item>Menyimpan perubahan yang telah dilakukan dalam pengembangan.</item>
+        <item>Menyimpan pesan pengembang kedalam suatu fitur.</item>
+        <item>Menyimpan branch kedalam repository upstream dari tim pengembang.</item>
+    </string-array>
+
+    <string name="q2">Apa fungsi dari push pada git?</string>
+    <string-array name="c2">
+        <item>Mengupload hasil commit dari local-machine ke origin.</item>
+        <item>Mengupload source code ke server tanpa diketahui orang lain.</item>
+        <item>Mengupload dan membuang hasil commit sebelumnya dari local-machine.</item>
+        <item>Mengupload isi hati developer kedalam origin.</item>
+    </string-array>
+
+    <string name="q3">Bagaimana cara mengembalikan commit lama yang telah tertimpa oleh commit terbaru?</string>
+    <string-array name="c3">
+        <item>git revert</item>
+        <item>git reset</item>
+        <item>git checkout</item>
+        <item>git commit</item>
+    </string-array>
+
+    <string name="q4">Apa keuntungan dari penggunaan Git Version Control?</string>
+    <string-array name="c4">
+        <item>Menyulitkan tim pengembang.</item>
+        <item>Mempersulit anggota newbie agar kelihatan keren.</item>
+        <item>Mempermudah dalam melakukan pengembangan aplikasi secara bersama</item>
+        <item>Mempermudah terjadinya kesalahan pengembangan fitur.</item>
+    </string-array>
+
+    <string name="q5">Kapan seseorang perlu melakukan pull request?</string>
+    <string-array name="c5">
+        <item>Setiap setelah melakukan commit</item>
+        <item>Setiap mengupload hasil kerja.</item>
+        <item>Setiap terjadi kesalahan pengembangan.</item>
+        <item>Setiap ingin menyatukan pekerjaan dari sebuah branch.</item>
+    </string-array>
+
+    <string name="q6">Bagaimana cara kerja branching pada git?</string>
+    <string-array name="c6">
+        <item>Memisahkan branch dari master (fork).</item>
+        <item>Memisahkan branch dari origin.</item>
+        <item>Memisahkan branch dari upstream.</item>
+        <item>Memisahkan branch dari local-machine.</item>
+    </string-array>
+
+    <string name="q7">Apa yang akan terjadi jika anda memasukan command git status?</string>
+    <string-array name="c7">
+        <item>Menampilkan status dari branch yang sedang tidak aktif.</item>
+        <item>Menampilkan status dari branch yang sedang aktif dan tidak aktif.</item>
+        <item>Menampilkan status dari branch yang sedang aktif.</item>
+        <item>Menampilkan status dari branch yang sedang aktif dan tidak aktif serta branch yang telah ter-merge.</item>
+    </string-array>
+
+    <string name="q8">Bagaimana cara anda menemukan file yang telah berubah akibat commit tertentu?</string>
+    <string-array name="c8">
+        <item>git log</item>
+        <item>git status</item>
+        <item>git checkout</item>
+        <item>git diff</item>
+    </string-array>
+
+    <string name="q9">Bagaimana cara Anda memulihkan branch yang sebelumnya terjadi perubahan di repositori utama namun secara kebetulan terhapus dari mesin lokal setiap anggota tim?</string>
+    <string-array name="c9">
+        <item>Reflog pada commit terbaru dari branch master.</item>
+        <item>Reflog pada commit terbaru dari beberapa branch.</item>
+        <item>Reflog pada commit terbaru dari branch origin.</item>
+        <item>Reflog pada commit terbaru dari branch upstream.</item>
+    </string-array>
+
+    <string name="q10">Command apa yang digunakan untuk membantu kita mengetahui branch yang telah ter-merge kedalam master?</string>
+    <string-array name="c10">
+        <item>git reset</item>
+        <item>git revert</item>
+        <item>git checkout</item>
+        <item>git branch</item>
+    </string-array>
+
+</resources>

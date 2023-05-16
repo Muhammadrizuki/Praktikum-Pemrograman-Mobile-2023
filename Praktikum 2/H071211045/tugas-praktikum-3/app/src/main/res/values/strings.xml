@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Tugas Praktikum 3</string>
+
+    <!-- Elements -->
+    <string name="backspace">\u232b</string>
+    <string name="equals">\u003d</string>
+
+    <!-- Operations -->
+    <string name="plus">\u002b</string>
+    <string name="minus">\u2212</string>
+    <string name="multiply">\u00d7</string>
+    <string name="divide">\u00f7</string>
+
+    <string name="dot">\u002e</string>
+
+    <!-- Numbers -->
+    <string name="zero">\u0030</string>
+    <string name="one">\u0031</string>
+    <string name="two">\u0032</string>
+    <string name="three">\u0033</string>
+    <string name="four">\u0034</string>
+    <string name="five">\u0035</string>
+    <string name="six">\u0036</string>
+    <string name="seven">\u0037</string>
+    <string name="eight">\u0038</string>
+    <string name="nine">\u0039</string>
+    <string name="divide_zero">Cannot Divide By Zero!</string>
+</resources>
