@@ -30,7 +30,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.adapterViewHolder> {
     public void onBindViewHolder(@NonNull adapterViewHolder holder, int position) {
         Parcable parcable = listparcable.get(position);
         holder.tv1.setText(parcable.getText1());
-        holder.image.setImageBitmap(parcable.getFoto());
+        holder.image.setImageURI(parcable.getImageUri());
 
     }
 

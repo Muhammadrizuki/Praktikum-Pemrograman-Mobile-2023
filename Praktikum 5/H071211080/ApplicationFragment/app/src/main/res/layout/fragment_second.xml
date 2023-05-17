@@ -65,7 +65,8 @@
                android:layout_width="300dp"
                android:layout_height="300dp"
               android:layout_gravity="center"
-               android:src="@drawable/image"/>
+               android:src="@drawable/image"
+               android:tag="imageuri"/>
        </androidx.cardview.widget.CardView>
 
        <androidx.cardview.widget.CardView

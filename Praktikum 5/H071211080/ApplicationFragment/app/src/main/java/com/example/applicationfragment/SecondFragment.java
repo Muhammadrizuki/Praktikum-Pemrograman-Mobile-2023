@@ -72,10 +72,10 @@ public class SecondFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 BlankFragment blankFragment = new BlankFragment();
-                Bitmap bitmap = ((BitmapDrawable) image1.getDrawable()).getBitmap();
+                String imageUriString = imageUri != null ? imageUri.toString() : null; // Convert Uri to string
+                image1.setTag(imageUriString);
                 String string = et.getText().toString();
-                Parcable parcable = new Parcable(string,bitmap);
-                viewModel.setData(parcable);
+                Parcable parcable = new Parcable(string,imageUri);
                 Bundle bundle = new Bundle();
                 bundle.putParcelable("et",parcable);
                 blankFragment.setArguments(bundle);
@@ -89,6 +89,9 @@ public class SecondFragment extends Fragment {
 
         return view;
     }
+
+
+
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {

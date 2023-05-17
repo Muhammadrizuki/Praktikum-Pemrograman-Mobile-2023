@@ -1,18 +1,19 @@
 package com.example.applicationfragment;
 
 import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Parcel;
 import android.os.Parcelable;
 
 import androidx.annotation.NonNull;
 
 public class Parcable implements Parcelable {
-    public Bitmap getFoto() {
-        return foto;
+    public Uri getImageUri() {
+        return imageUri;
     }
 
-    public void setFoto(Bitmap foto) {
-        this.foto = foto;
+    public void setImageUri(Uri imageUri) {
+        this.imageUri = imageUri;
     }
 
     public String getText1() {
@@ -23,15 +24,17 @@ public class Parcable implements Parcelable {
         this.text1 = text1;
     }
 
-    Bitmap foto;
+    Uri imageUri; // Change the variable name from ImageUri to imageUri
+
     String text1;
-    Parcable(String text1, Bitmap foto){
+
+    Parcable(String text1, Uri imageUri) { // Change the parameter name from ImageUri to imageUri
         this.text1 = text1;
-        this.foto = foto;
+        this.imageUri = imageUri;
     }
 
     protected Parcable(Parcel in) {
-        foto = in.readParcelable(Bitmap.class.getClassLoader());
+        imageUri = in.readParcelable(Uri.class.getClassLoader()); // Change from Bitmap to Uri
         text1 = in.readString();
     }
 
@@ -53,8 +56,8 @@ public class Parcable implements Parcelable {
     }
 
     @Override
-    public void writeToParcel(@NonNull Parcel parcel, int i) {
-        parcel.writeParcelable(foto, i);
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeParcelable(imageUri, i); // Change from Bitmap to Uri
         parcel.writeString(text1);
     }
 }
