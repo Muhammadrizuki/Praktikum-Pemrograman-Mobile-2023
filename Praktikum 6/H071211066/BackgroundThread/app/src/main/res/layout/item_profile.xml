@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/pr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/profile"
+            android:src="@drawable/p"
+            android:layout_marginEnd="8dp"
+            app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Full"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <TextView
+                android:id="@+id/tNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Syifa Ur Rahmi"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tUNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="faasyifa"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
