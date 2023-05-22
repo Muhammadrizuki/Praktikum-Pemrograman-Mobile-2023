@@ -71,7 +71,7 @@ public class UploadFragment extends Fragment {
                 capt.setError("Field can't be empty");
             } else {
                 DataUpload.setList(new UploadModel(caption, uri,
-                        "https://www.bing.com/images/search?view=detailV2&ccid=OfE6Dl7t&id=027C448239A48CCEFC991781C4FD4320469D9371&thid=OIP.OfE6Dl7tcGXXvFbN3jNYRgHaNK&mediaurl=https%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2fimages5%2fLight-Blue-Aesthetic-HD-Wallpaper-Free-download-864x1536.jpg&exph=1536&expw=864&q=gambar+blue+pohon+estetic&simid=608022972802150750&FORM=IRPRST&ck=C51A5E1FB4C32EB0999556415CB0C7E9&selectedIndex=1", "Syifa Ur Rahmi", "fasyifaa"));
+                        "https://i.pinimg.com/736x/e8/80/11/e8801197ebc8d85934bf4b7d6d810fe4.jpg", "Syifa Ur Rahmi", "fasyifaa"));
 
                 Bundle bundle = new Bundle();
                 bundle.putParcelableArrayList("key_upload", DataUpload.getList());

@@ -9,14 +9,19 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.os.Handler;
+import android.os.Looper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Adapter;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 
 import java.util.ArrayList;
 import java.util.Locale;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class SearchFragment extends Fragment {
     SearchView searchView;
@@ -34,6 +39,7 @@ public class SearchFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         searchView = (SearchView) view.findViewById(R.id.cari);
         searchView.clearFocus();
+        ProgressBar pb = view.findViewById(R.id.pb);
         String tes = String.valueOf(searchView.getQuery());
         RecyclerView rv = view.findViewById(R.id.rv_profile);
         rv.setLayoutManager(new LinearLayoutManager(getActivity()));
@@ -45,6 +51,11 @@ public class SearchFragment extends Fragment {
 
             @Override
             public boolean onQueryTextChange(String newText) {
+                pb.setVisibility(View.VISIBLE);
+                rv.setVisibility(View.GONE);
+                if (newText.isEmpty()){
+                    rv.setVisibility(View.GONE);
+                }
                 filterList(newText);
                 return true;
             }
@@ -52,6 +63,8 @@ public class SearchFragment extends Fragment {
             ArrayList<UploadModel> uploads = DataUpload.getList();
             SearchAdapter adapter = new SearchAdapter(getContext(), uploads);
 
+            ExecutorService executor = Executors.newSingleThreadExecutor();
+            Handler handler = new Handler(Looper.getMainLooper());
 
             private void filterList(String text) {
                 ArrayList<UploadModel> filteredList = new ArrayList<>();
@@ -62,12 +75,31 @@ public class SearchFragment extends Fragment {
                     if (filteredList.isEmpty()){
                         continue;
                     }else if(text.equals("")){
-                        rv.setVisibility(View.GONE);
+                        executor.execute(()->{
+                            try {
+                                Thread.sleep(500);
+                                handler.post(()->{
+                                    pb.setVisibility(View.GONE);
+                                });
+                            }catch (InterruptedException e){
+                                e.printStackTrace();
+                            }
+                        });
                     }
                     else {
                         adapter.setFilter(filteredList);
-                        rv.setVisibility(View.VISIBLE);
-                        rv.setAdapter(adapter);
+                        executor.execute(()->{
+                            try {
+                                Thread.sleep(500);
+                                handler.post(()->{
+                                    rv.setVisibility(View.VISIBLE);
+                                    pb.setVisibility(View.GONE);
+                                    rv.setAdapter(adapter);
+                                });
+                            }catch (InterruptedException e){
+                                e.printStackTrace();
+                            }
+                        });
                     }
                 }
             }

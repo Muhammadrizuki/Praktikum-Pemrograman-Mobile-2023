@@ -38,8 +38,11 @@ public class UploadAdapter extends RecyclerView.Adapter<UploadAdapter.ViewHolder
     @Override
     public void onBindViewHolder(@NonNull UploadAdapter.ViewHolder holder, int position) {
         holder.tCapt.setText(uploads.get(position).getCaption());
+        String nama = uploads.get(position).getNama();
+        String username = uploads.get(position).getUsername();
+        String foto = uploads.get(position).getProfile();
         Glide.with(holder.itemView.getContext())
-                .load(uploads.get(position).getProfile())
+                .load(foto)
                 .apply(new RequestOptions().override(350,
                         550))
                 .into(holder.profile);
@@ -48,11 +51,14 @@ public class UploadAdapter extends RecyclerView.Adapter<UploadAdapter.ViewHolder
                 .apply(new RequestOptions().override(350,
                         550))
                 .into(holder.post);
-        holder.tUNama.setText(uploads.get(position).getUsername());
+        holder.tUNama.setText(username);
         holder.pr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(holder.itemView.getContext(), ProfileActivity.class);
+                intent.putExtra(ProfileActivity.EXTRA_NAMA, nama);
+                intent.putExtra(ProfileActivity.EXTRA_USERNAME, username);
+                intent.putExtra(ProfileActivity.EXTRA_FOTO, foto);
                 holder.itemView.getContext().startActivity(intent);
             }
         });
