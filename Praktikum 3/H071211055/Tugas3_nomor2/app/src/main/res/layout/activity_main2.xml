@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFB4B4"
+        tools:context=".MainActivity3">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:text="Quiz"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            app:layout_constraintBottom_toTopOf="@id/no_quest"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/no_quest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quiz 1 of 5"
+            android:textSize="45sp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:fontFamily="serif-monospace"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text1"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <FrameLayout
+            android:layout_width="410dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/no_quest"
+
+            android:padding="20dp">
+
+            <View
+                android:layout_width="350dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/tampilan_background"/>
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginHorizontal="40dp" />
+            <View
+                android:id="@+id/view1"
+                android:layout_width="315dp"
+                android:layout_marginLeft="32dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="170dp"
+                android:background="@drawable/tampilan_answer" />
+            <TextView
+                android:id="@+id/textAnswer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:layout_marginTop="180dp"
+                android:layout_marginHorizontal="40dp" />
+            <View
+                android:id="@+id/view2"
+                android:layout_width="315dp"
+                android:layout_marginLeft="32dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="260dp"
+                android:background="@drawable/tampilan_answer" />
+            <TextView
+                android:id="@+id/textAnswer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:layout_marginTop="272dp"
+                android:layout_marginHorizontal="40dp" />
+            <View
+                android:id="@+id/view3"
+                android:layout_width="315dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="350dp"
+                android:background="@drawable/tampilan_answer" />
+            <TextView
+                android:id="@+id/textAnswer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:layout_marginTop="360dp"
+                android:layout_marginHorizontal="40dp" />
+            <View
+                android:id="@+id/view4"
+                android:layout_width="315dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="440dp"
+                android:background="@drawable/tampilan_answer" />
+            <TextView
+                android:id="@+id/textAnswer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:layout_marginTop="450dp"
+                android:layout_marginHorizontal="40dp" />
+
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
