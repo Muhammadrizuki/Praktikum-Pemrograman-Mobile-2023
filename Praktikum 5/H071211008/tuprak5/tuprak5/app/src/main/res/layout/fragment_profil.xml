@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        app:shapeAppearance="@style/cirle"
+        android:id="@+id/iv_profil"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/propil"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_profil"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/aladin"
+        android:gravity="center"
+        android:text="Besse Saahriyuni"
+        android:textColor="@color/coklat"
+        android:textSize="30dp" />
+
+</RelativeLayout>

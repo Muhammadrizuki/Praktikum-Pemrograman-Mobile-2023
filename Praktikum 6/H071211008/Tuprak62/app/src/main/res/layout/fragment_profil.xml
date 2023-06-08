@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llloading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rvvv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            app:shapeAppearance="@style/cirle"
+            android:id="@+id/iv_profil"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/propil"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/tv_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_profil"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/aladin"
+            android:gravity="center"
+            android:text="Besse Sahriyuni"
+            android:textColor="@color/coklat"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_nama"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="bshriyuni"
+            android:textColor="@color/coklat"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
