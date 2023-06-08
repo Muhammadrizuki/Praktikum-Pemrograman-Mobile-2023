@@ -1,0 +1,138 @@
+[
+    {
+        "merged": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-merged_res-29:/drawable_ic_launcher_background.xml.flat",
+        "source": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-main-31:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-merged_res-29:/drawable_dotted_line.xml.flat",
+        "source": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-main-31:/drawable/dotted_line.xml"
+    },
+    {
+        "merged": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-merged_res-29:/mipmap-anydpi-v33_ic_launcher.xml.flat",
+        "source": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-main-31:/mipmap-anydpi-v33/ic_launcher.xml"
+    },
+    {
+        "merged": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-merged_res-29:/drawable_container_pappi.xml.flat",
+        "source": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-main-31:/drawable/container_pappi.xml"
+    },
+    {
+        "merged": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-merged_res-29:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-main-31:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-merged_res-29:/drawable_bg_quiz.xml.flat",
+        "source": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-main-31:/drawable/bg_quiz.xml"
+    },
+    {
+        "merged": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-merged_res-29:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-main-31:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-merged_res-29:/xml_backup_rules.xml.flat",
+        "source": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-main-31:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-merged_res-29:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-main-31:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-merged_res-29:/drawable_baseline_face_24.xml.flat",
+        "source": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-main-31:/drawable/baseline_face_24.xml"
+    },
+    {
+        "merged": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-merged_res-29:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-main-31:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-merged_res-29:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-main-31:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-merged_res-29:/drawable_star_line.xml.flat",
+        "source": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-main-31:/drawable/star_line.xml"
+    },
+    {
+        "merged": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-merged_res-29:/layout_activity_quiz.xml.flat",
+        "source": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-main-31:/layout/activity_quiz.xml"
+    },
+    {
+        "merged": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-merged_res-29:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-main-31:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-merged_res-29:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-main-31:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-merged_res-29:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-main-31:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-merged_res-29:/drawable_bg_main.xml.flat",
+        "source": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-main-31:/drawable/bg_main.xml"
+    },
+    {
+        "merged": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-merged_res-29:/drawable_baseline_keyboard_backspace_24.xml.flat",
+        "source": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-main-31:/drawable/baseline_keyboard_backspace_24.xml"
+    },
+    {
+        "merged": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-merged_res-29:/drawable_github_logo.png.flat",
+        "source": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-main-31:/drawable/github_logo.png"
+    },
+    {
+        "merged": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-merged_res-29:/xml_data_extraction_rules.xml.flat",
+        "source": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-main-31:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.sisfo.tugaspraktikum5.app-merged_res-29:/layout_activity_score.xml.flat",
+        "source": "com.sisfo.tugaspraktikum5.app-main-31:/layout/activity_score.xml"
+    },
+    {
+        "merged": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-merged_res-29:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-main-31:/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-merged_res-29:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-main-31:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-merged_res-29:/layout_activity_main.xml.flat",
+        "source": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-main-31:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-merged_res-29:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-main-31:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-merged_res-29:/drawable_wave.xml.flat",
+        "source": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-main-31:/drawable/wave.xml"
+    },
+    {
+        "merged": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-merged_res-29:/layout_activity_score.xml.flat",
+        "source": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-main-31:/layout/activity_score.xml"
+    },
+    {
+        "merged": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-merged_res-29:/drawable_container_glass.xml.flat",
+        "source": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-main-31:/drawable/container_glass.xml"
+    },
+    {
+        "merged": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-merged_res-29:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-main-31:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-merged_res-29:/drawable_baseline_star_24.xml.flat",
+        "source": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-main-31:/drawable/baseline_star_24.xml"
+    },
+    {
+        "merged": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-merged_res-29:/drawable_baseline_photo_camera_24.xml.flat",
+        "source": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-main-31:/drawable/baseline_photo_camera_24.xml"
+    },
+    {
+        "merged": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-merged_res-29:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-main-31:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-merged_res-29:/drawable_back_button.xml.flat",
+        "source": "/home/sofyanox12/.gradle/daemon/7.5/com.sisfo.tugaspraktikum5.app-main-31:/drawable/back_button.xml"
+    }
+]

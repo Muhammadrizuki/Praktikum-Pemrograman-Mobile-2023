@@ -14,10 +14,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+<<<<<<< Updated upstream
         android:background="@color/green_bali"
         android:paddingVertical="8dp"
         android:gravity="center_vertical"
         android:paddingHorizontal="4dp">
+=======
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/card_touch_ripple"
+        android:background="?colorPrimary"
+        android:paddingVertical="8dp"
+        android:gravity="center_vertical">
+>>>>>>> Stashed changes
 
         <androidx.cardview.widget.CardView
             android:id="@+id/conversation_back_button_container"
@@ -32,14 +41,22 @@
                 android:layout_height="wrap_content"
                 android:paddingVertical="2dp">
 
+<<<<<<< Updated upstream
                 <ImageButton
+=======
+                <ImageView
+>>>>>>> Stashed changes
                     android:id="@+id/conversation_back_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/round_arrow_back_24"
                     android:background="@android:color/transparent"
                     android:layout_centerVertical="true"
+<<<<<<< Updated upstream
                     android:contentDescription="Back" />
+=======
+                    android:paddingStart="4dp"/>
+>>>>>>> Stashed changes
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/conversation_profile_picture"
@@ -74,6 +91,10 @@
         app:layout_constraintTop_toBottomOf="@id/conversation_top_bar">
 
         <androidx.recyclerview.widget.RecyclerView
+<<<<<<< Updated upstream
+=======
+            android:id="@+id/conversation_recycler_view"
+>>>>>>> Stashed changes
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Network Assignment</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">name@email.com</string>
+    <string name="id">8</string>
+    <string name="show_id">ID:</string>
+    <string name="job_hint">Enter a job for this user</string>
+    <string name="submit">Submit</string>
+</resources>

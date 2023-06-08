@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+<<<<<<< Updated upstream
     android:layout_marginBottom="4dp">
 
     <LinearLayout
@@ -12,6 +13,18 @@
         android:background="@drawable/incoming_speech_bubble"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="@id/guideline"
+=======
+    android:layout_marginEnd="72dp"
+    android:layout_marginTop="4dp">
+
+    <LinearLayout
+        android:id="@+id/conversation_bubble_chat_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/incoming_speech_bubble"
+        android:minWidth="68sp"
+        app:layout_constraintStart_toStartOf="parent"
+>>>>>>> Stashed changes
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constrainedWidth="true"
         android:orientation="vertical">
@@ -45,6 +58,7 @@
 
     </LinearLayout>
 
+<<<<<<< Updated upstream
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
@@ -52,4 +66,6 @@
         app:layout_constraintGuide_end="72dp"
         android:orientation="vertical" />
 
+=======
+>>>>>>> Stashed changes
 </androidx.constraintlayout.widget.ConstraintLayout>

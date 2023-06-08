@@ -2,7 +2,11 @@
     <string name="app_name">Tugas Praktikum 6</string>
     <string name="main_chats_title">Wassedap</string>
 
+<<<<<<< Updated upstream
 <!-- Sample(s) -->
+=======
+    <!-- Sample(s) -->
+>>>>>>> Stashed changes
     <string name="sample_name">Name</string>
     <string name="sample_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus leo ut tincidunt ornare. Donec nec sollicitudin orci. Quisque eget pellentesque odio, eget malesuada tortor. Mauris vehicula neque odio, nec rhoncus diam laoreet nec. Fusce tincidunt eros ut dui auctor sagittis. Donec nec vestibulum ipsum. Morbi gravida vulputate neque, in ornare nibh consectetur ut.</string>
     <string name="sample_time">12.00</string>

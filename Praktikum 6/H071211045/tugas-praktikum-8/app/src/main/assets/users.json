@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "username": "barrack_obama",
+      "name": "Barrack Hossein Yomama",
+      "profile_pic": "https://i.postimg.cc/N0392Twd/obama.jpg"
+    },
+    {
+      "username": "sofyanox12",
+      "name": "Sofyan Pujas",
+      "profile_pic": "https://i.ibb.co/jWmtNkt/Sofyan-Balita.jpg"
+    },
+    {
+      "username": "joe_biden",
+      "name": "Joe Al-Birudin",
+      "profile_pic": "https://i.postimg.cc/SNLxD3b7/joe-biden.jpg"
+    },
+    {
+      "username": "vladimir_putin",
+      "name": "Hj. Vladimir bin Putin",
+      "profile_pic": "https://i.postimg.cc/Hnwygtjq/putin.jpg"
+    },
+    {
+      "username": "ahmad_soeharto",
+      "name": "Ahmad Soehartono",
+      "profile_pic": "https://i.postimg.cc/KYYccDp6/soeharto.jpg"
+    },
+    {
+      "username": "saddam_hussein",
+      "name": "Saddam Brozayn",
+      "profile_pic": "https://i.postimg.cc/qq6XPndn/saddam.jpg"
+    },
+    {
+      "username": "albert_einstein",
+      "name": "Kyai Hj. Albert Einstein",
+      "profile_pic": "https://i.postimg.cc/nLsC4969/albert.jpg"
+    },
+    {
+      "username": "isaac_newton",
+      "name": "Isaac Daeng Newtono",
+      "profile_pic": "https://i.postimg.cc/VkXRDjYb/newton.jpg"
+    },
+    {
+      "username": "mark_zuckerberg",
+      "name": "Muhammad Zuckerbego",
+      "profile_pic": "https://i.postimg.cc/CL7PgCyT/mark.png"
+    },
+    {
+      "username": "george_bush",
+      "name": "Orgy W. Buzz",
+      "profile_pic": "https://i.ibb.co/brHnwWt/bush.jpg"
+    }
+  ]
+}

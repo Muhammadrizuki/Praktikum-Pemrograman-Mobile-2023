@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="c1">
+        <item>Menyimpan rahasia kedalam git.</item>
+        <item>Menyimpan perubahan yang telah dilakukan dalam pengembangan.</item>
+        <item>Menyimpan pesan pengembang kedalam suatu fitur.</item>
+        <item>Menyimpan branch kedalam repository upstream dari tim pengembang.</item>
+    </string-array>
+    <string-array name="c10">
+        <item>git reset</item>
+        <item>git revert</item>
+        <item>git checkout</item>
+        <item>git branch</item>
+    </string-array>
+    <string-array name="c2">
+        <item>Mengupload hasil commit dari local-machine ke origin.</item>
+        <item>Mengupload source code ke server tanpa diketahui orang lain.</item>
+        <item>Mengupload dan membuang hasil commit sebelumnya dari local-machine.</item>
+        <item>Mengupload isi hati developer kedalam origin.</item>
+    </string-array>
+    <string-array name="c3">
+        <item>git revert</item>
+        <item>git reset</item>
+        <item>git checkout</item>
+        <item>git commit</item>
+    </string-array>
+    <string-array name="c4">
+        <item>Menyulitkan tim pengembang.</item>
+        <item>Mempersulit anggota newbie agar kelihatan keren.</item>
+        <item>Mempermudah dalam melakukan pengembangan aplikasi secara bersama</item>
+        <item>Mempermudah terjadinya kesalahan pengembangan fitur.</item>
+    </string-array>
+    <string-array name="c5">
+        <item>Setiap setelah melakukan commit</item>
+        <item>Setiap mengupload hasil kerja.</item>
+        <item>Setiap terjadi kesalahan pengembangan.</item>
+        <item>Setiap ingin menyatukan pekerjaan dari sebuah branch.</item>
+    </string-array>
+    <string-array name="c6">
+        <item>Memisahkan branch dari master (fork).</item>
+        <item>Memisahkan branch dari origin.</item>
+        <item>Memisahkan branch dari upstream.</item>
+        <item>Memisahkan branch dari local-machine.</item>
+    </string-array>
+    <string-array name="c7">
+        <item>Menampilkan status dari branch yang sedang tidak aktif.</item>
+        <item>Menampilkan status dari branch yang sedang aktif dan tidak aktif.</item>
+        <item>Menampilkan status dari branch yang sedang aktif.</item>
+        <item>Menampilkan status dari branch yang sedang aktif dan tidak aktif serta branch yang telah ter-merge.</item>
+    </string-array>
+    <string-array name="c8">
+        <item>git log</item>
+        <item>git status</item>
+        <item>git checkout</item>
+        <item>git diff</item>
+    </string-array>
+    <string-array name="c9">
+        <item>Reflog pada commit terbaru dari branch master.</item>
+        <item>Reflog pada commit terbaru dari beberapa branch.</item>
+        <item>Reflog pada commit terbaru dari branch origin.</item>
+        <item>Reflog pada commit terbaru dari branch upstream.</item>
+    </string-array>
+    <color name="black">#FF000000</color>
+    <color name="green_sky">#14C56E</color>
+    <color name="grey_pappi">#A8A8A8</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="semi_purple">#3F51B5</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="text_purple">#A1ABE2</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Tugas Praktikum 5</string>
+    <string name="q1">Apa fungsi utama dari commit pada git?</string>
+    <string name="q10">Command apa yang digunakan untuk membantu kita mengetahui branch yang telah ter-merge kedalam master?</string>
+    <string name="q2">Apa fungsi dari push pada git?</string>
+    <string name="q3">Bagaimana cara mengembalikan commit lama yang telah tertimpa oleh commit terbaru?</string>
+    <string name="q4">Apa keuntungan dari penggunaan Git Version Control?</string>
+    <string name="q5">Kapan seseorang perlu melakukan pull request?</string>
+    <string name="q6">Bagaimana cara kerja branching pada git?</string>
+    <string name="q7">Apa yang akan terjadi jika anda memasukan command git status?</string>
+    <string name="q8">Bagaimana cara anda menemukan file yang telah berubah akibat commit tertentu?</string>
+    <string name="q9">Bagaimana cara Anda memulihkan branch yang sebelumnya terjadi perubahan di repositori utama namun secara kebetulan terhapus dari mesin lokal setiap anggota tim?</string>
+    <style name="Theme.TugasPraktikum5" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        
+    </style>
+    <style name="choiceButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textSize">12sp</item>
+        <item name="backgroundTint">@color/semi_purple</item>
+
+    </style>
+    <style name="circularImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>

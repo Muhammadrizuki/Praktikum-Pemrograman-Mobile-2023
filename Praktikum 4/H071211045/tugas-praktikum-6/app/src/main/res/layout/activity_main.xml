@@ -14,7 +14,11 @@
         app:layout_constraintStart_toStartOf="parent"
         android:padding="18dp"
         android:text="@string/main_chats_title"
+<<<<<<< Updated upstream
         android:background="@color/green_bali"
+=======
+        android:background="?colorPrimary"
+>>>>>>> Stashed changes
         android:textColor="@color/white"
         android:textSize="28sp"
         android:textStyle="bold"/>

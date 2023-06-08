@@ -18,7 +18,11 @@
         android:focusable="true"
         app:cardElevation="0dp"
         app:cardPreventCornerOverlap="false"
+<<<<<<< Updated upstream
         android:background="@android:color/transparent"
+=======
+        android:backgroundTint="@android:color/transparent"
+>>>>>>> Stashed changes
         app:shapeAppearanceOverlay="@style/CircularImage"
         android:foreground="@drawable/profile_pic_touch_ripple" >
 
@@ -27,6 +31,10 @@
             android:layout_width="56dp"
             android:layout_height="56dp"
             android:scaleType="centerCrop"
+<<<<<<< Updated upstream
+=======
+            android:background="@android:color/transparent"
+>>>>>>> Stashed changes
             app:shapeAppearanceOverlay="@style/CircularImage"
             android:src="@drawable/default_person"/>
 
