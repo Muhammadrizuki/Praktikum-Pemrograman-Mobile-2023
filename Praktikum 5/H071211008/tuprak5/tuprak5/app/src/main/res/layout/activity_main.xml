@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="10dp">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/tv_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/coklat"
+            android:text="Iniinstagram"
+            android:textSize="21sp"
+            android:textStyle="bold"/>
+    </Toolbar>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:id="@+id/frameLayout"
+        android:layout_below="@id/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp">
+
+        <ImageView
+            android:id="@+id/iv_home"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_home_24"/>
+
+        <ImageView
+            android:id="@+id/iv_post"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_add_24"/>
+
+        <ImageView
+            android:id="@+id/iv_profil"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_account_circle_24"/>
+    </LinearLayout>
+
+</RelativeLayout>

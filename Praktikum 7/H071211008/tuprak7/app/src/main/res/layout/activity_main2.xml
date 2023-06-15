@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#52D8D1D1"
+        app:cardCornerRadius="20dp"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_profil"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/baseline_person_24"
+                app:shapeAppearance="@style/circle" />
+
+            <TextView
+                android:id="@+id/tv_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_profil"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/aladin"
+                android:gravity="center"
+                android:text="Besse Sahriyuni"
+                android:textColor="@color/coklat"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_nama"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="bshriyuni@sd"
+                android:textColor="@color/coklat"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/reload"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/coklat"
+            android:text="Please check your internet connection"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/loading"
+            app:tint="@color/coklat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_replay_24"/>
+    </LinearLayout>
+
+</RelativeLayout>
