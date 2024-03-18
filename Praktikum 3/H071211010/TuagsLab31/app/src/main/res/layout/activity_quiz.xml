@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context=".Quiz">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 1 of 5"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pertanyaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pertanyaan"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/optionA"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:text="Answer 1" />
+
+    <Button
+        android:id="@+id/optionB"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:text="Answer 2" />
+
+    <Button
+        android:id="@+id/optionC"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:text="Answer 3" />
+
+    <Button
+        android:id="@+id/optionD"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:text="Answer 4" />
+
+
+</LinearLayout>
